@@ -4,7 +4,7 @@ import { Coffee, Users, Utensils, Wifi, MapPin, Clock } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import logo from "@/assets/kana-kuphi-logo.png";
+import logo from "@/assets/images.jpg";
 import heroImage from "@/assets/hero-coffee-shop.jpg";
 import featureCoffee from "@/assets/feature-coffee.jpg";
 import featureStudy from "@/assets/feature-study.jpg";
@@ -55,7 +55,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main>
         {/* Hero Section */}
         <section className="relative pt-16 sm:pt-20 min-h-screen flex items-center">
@@ -82,8 +82,9 @@ const Index = () => {
                   Your Cozy Coffee Destination
                 </h1>
                 <p className="text-lg sm:text-xl text-gray-200 leading-relaxed max-w-xl">
-                  Experience the perfect blend of comfort and quality at Kana Kuphi. 
-                  Where every cup tells a story and every visit feels like home.
+                  Experience the perfect blend of comfort and quality at Kana
+                  Kuphi. Where every cup tells a story and every visit feels
+                  like home.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button
@@ -115,15 +116,16 @@ const Index = () => {
                 About Kana Kuphi
               </h2>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-                Kana Kuphi is more than just a coffee shop – it's a community hub where 
-                coffee lovers, students, and professionals come together. We pride ourselves 
-                on serving carefully selected coffee and delicious light meals in a warm, 
-                welcoming atmosphere.
+                Kana Kuphi is more than just a coffee shop – it's a community
+                hub where coffee lovers, students, and professionals come
+                together. We pride ourselves on serving carefully selected
+                coffee and delicious light meals in a warm, welcoming
+                atmosphere.
               </p>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                Whether you're here to study, work on your next big project, or simply 
-                enjoy a peaceful moment with friends, Kana Kuphi provides the perfect 
-                setting for all your needs.
+                Whether you're here to study, work on your next big project, or
+                simply enjoy a peaceful moment with friends, Kana Kuphi provides
+                the perfect setting for all your needs.
               </p>
             </div>
           </div>
@@ -196,9 +198,7 @@ const Index = () => {
                     <h3 className="text-xl font-bold text-foreground">
                       {item.title}
                     </h3>
-                    <p className="text-muted-foreground">
-                      {item.description}
-                    </p>
+                    <p className="text-muted-foreground">{item.description}</p>
                   </div>
                 );
               })}
@@ -214,12 +214,14 @@ const Index = () => {
                 Ready for Your Perfect Cup?
               </h2>
               <p className="text-lg sm:text-xl opacity-90">
-                Visit us today and experience the Kana Kuphi difference. 
-                We're waiting to serve you!
+                Visit us today and experience the Kana Kuphi difference. We're
+                waiting to serve you!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button
-                  onClick={() => window.open("https://maps.google.com", "_blank")}
+                  onClick={() =>
+                    window.open("https://maps.google.com", "_blank")
+                  }
                   size="lg"
                   className="bg-white text-primary hover:bg-white/90 text-lg px-8"
                 >
